@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light Dark Mode</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-default" id="navbar">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="#" class="navbar-brand">Mercury</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign up</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                    <li class="theme-switch-wrapper">
+                        <span id="toggle-icon">
+                            <i class="fas fa-sun"></i>
+                        </span>
+                        <label class="theme-switch">
+                            <input type="checkbox">
+                            <div class="slider round"></div>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div>
+        <!-- Dark mode switch -->
+        <!-- Home Section -->
+        <section id="home">
+            <div class="title-group">
+                <h1>Mercury Web Solutions Limited</h1>
+                <h2>Welcome to Mercury</h2>
+            </div>
+        </section>
+        <!-- About Section -->
+        <section id="about">
+            <div class="about-container">
+                <h1>About Us</h1>
+                <h4>Welcome to mercury web solutions, your number one source for all things [product]. We're dedicated to providing you the best of [product], with a focus on dependability. customer service, and [store characteristic].
+                We're working to turn our passion for [product] into a booming online store. We hope you enjoy our products as much as we enjoy offering them to you.
+                </h4>
+            </div>
+        </section>
+        <!-- Projects Section -->
+        <section id="projects">
+            <h1>About Our projects</h1>
+            <div class="project-container">
+                <div class="image-container">
+                    <h2>Web Innovation</h2>
+                    <img src="img/undraw_proud_coder_light.svg" alt="Proud oder" id="image1">
+                </div>
+                <div class="image-container">
+                    <h2>Problem Solving</h2>
+                    <img src="img/undraw_feeling_proud_light.svg" alt="Proud oder" id="image2">
+                </div>
+                <div class="image-container">
+                    <h2>High End Concept</h2>
+                    <img src="img/undraw_conceptual_idea_light.svg" alt="Proud oder" id="image3">
+                </div>
+            </div>
+        </section>
+        <!-- Contact Section -->
+        <section id="contact">
+            <h1>Connect with Us</h1>
+            <div class="social-icons">
+                <i class="fab fa-github"></i>
+                <i class="fab fa-codepen"></i>
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter"></i>
+            </div>
+        </section>
+    </div>
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
