@@ -16,9 +16,6 @@ function switchTheme(event) {
         navbar.classList.add('navbar-default');
         toggleIcon.classList.add('fa-sun');
         toggleIcon.classList.remove('fa-moon');
-
-        
-
     }
 }
 
