@@ -44,7 +44,7 @@ section {
 }
 
 /* Navigation */
-.navbar-default {
+.navbar-default, .navbar-inverse {
   position: fixed;
   width: 100%;
 }
@@ -84,13 +84,20 @@ h4 {
 
 .about-container {
   text-align: center;
+  padding: 0 20px;
 }
 /* project Section */
 .project-container {
   display: flex;
   cursor: pointer;
+  margin-top: 15px;
 }
-
+.social-icons {
+  margin-top: 15px;
+}
+.social-icons a:hover {
+  border-bottom: none;
+}
 .image-container {
   border: 1px solid var(--secondary-color);
   border-radius: 10px;
