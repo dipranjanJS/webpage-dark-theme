@@ -32,11 +32,23 @@ function lightMode() {
 // Theme change function
 function switchTheme(event) {
     if(event.target.checked) {
+        localStorage.setItem('theme', 'dark');
         darkMode();
     } else {
+        localStorage.setItem('theme', 'light');
         lightMode()
     }
 }
 
 // Event listener
 toggleSwitch.addEventListener('change', switchTheme);
+
+// Check local storage for theme
+const currentTheme = localStorage.getItem('theme');
+if(currentTheme) {
+    document.documentElement.setAttribute('data-theme', currentTheme);
+    if(currentTheme === 'dark') {
+        toggleSwitch.checked = true;
+        darkMode()
+    }
+}
